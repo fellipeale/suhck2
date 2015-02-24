@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="public" template="/WEB-INF/views/template/public.jsp">
+		<put-attribute name="title" value="SUHCK - Sistema Unificado Hospitalar de Controle Kabuloso" />
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="restrict" template="/WEB-INF/views/template/restrict.jsp">
+		<put-attribute name="title" value="SUHCK - Sistema Unificado Hospitalar de Controle Kabuloso" />
+		<put-attribute name="header" value="/WEB-INF/views/restrict/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/restrict/menu.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="public/main" extends="public">
+		<put-attribute name="body" value="/WEB-INF/views/public/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/main" extends="restrict">
+		<put-attribute name="body" value="/WEB-INF/views/restrict/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/painel" extends="public">
+		<put-attribute name="body" value="/WEB-INF/views/restrict/painel/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/medico" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Listagem de Médicos" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/medico/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/medico/novo" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Novo Médico" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/medico/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/medico/editar" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Editar Médico" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/medico/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/plano" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Listagem de Planos de Saúde" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/plano/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/plano/novo" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Novo Plano de Saúde" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/plano/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/plano/editar" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Editar Plano de Saúde" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/plano/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/paciente" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Listagem de Pacientes" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/paciente/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/paciente/novo" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Novo Paciente" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/paciente/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/paciente/editar" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Editar Paciente" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/paciente/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/atendente" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Listagem de Atendentes" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/atendente/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/atendente/novo" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Novo Atendente" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/atendente/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/atendente/editar" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Editar Atendente" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/atendente/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/agendamento" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Listagem de Agendamentos" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/agendamento/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/agendamento/novo" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Novo Agendamento" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/agendamento/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/agendamento/editar" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Editar Agendamento" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/agendamento/gerenciar.jsp" />
+	</definition>
+	
+	<definition name="restrict/atendimento" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Listagem de Agendamentos" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/atendimento/main.jsp" />
+	</definition>
+	
+	<definition name="restrict/atendimento/novo" extends="restrict">
+		<put-attribute name="title" value="SUHCK - Novo atendimento" />
+		<put-attribute name="body" value="/WEB-INF/views/restrict/atendimento/gerenciar.jsp" />
+	</definition>
+	
+</tiles-definitions>
